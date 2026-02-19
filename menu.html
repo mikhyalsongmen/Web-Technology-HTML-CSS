@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navbar</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background: yellow;
+    padding: 20px 40px;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    padding: 10px 25px;
+    border-right: 3px solid black;
+}
+
+.navbar li:last-child{
+    border-right: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: purple;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* active home button */
+.active{
+    background: blue;
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
