@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #555;
+        }
+
+        th, td {
+            border: 2px solid #888;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Styling for the header row */
+        .title-row {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Styling for the vertical 'Hours' text */
+        .hours-col {
+            font-weight: bold;
+            width: 40px;
+        }
+
+        /* Styling for specific blocks */
+        .lunch, .project {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="6" class="title-row">Time Table</th>
+        </tr>
+
+        <tr>
+            <th rowspan="6" class="hours-col">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+
+        <tr>
+            <th colspan="5" class="lunch">Lunch</th>
+        </tr>
+
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td colspan="2" rowspan="2" class="project">Project</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+        </tr>
+    </table>
+
+</body>
+</html>
