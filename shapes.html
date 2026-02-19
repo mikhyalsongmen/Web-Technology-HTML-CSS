@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Map Visual Demo</title>
+<style>
+  .map-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Rectangle */
+  .rect {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid red;
+    cursor: pointer;
+  }
+
+  /* Circle */
+  .circle {
+    position: absolute;
+    left: 290px; /* centerX - radius */
+    top: 90px;   /* centerY - radius */
+    width: 120px; /* diameter = 2*radius */
+    height: 120px;
+    border: 2px solid green;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Polygon overlay using SVG */
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+
+<h2>Image Map Demo with Visible Shapes</h2>
+<p>Click on the shapes to see which one is clicked.</p>
+
+<div class="map-container">
+  <!-- Grid image -->
+  <img src="map.png" width="600" height="400" alt="Grid Image">
+
+  <!-- Rectangle -->
+  <div class="rect" onclick="alert('Rectangle clicked!')"></div>
+
+  <!-- Circle -->
+  <div class="circle" onclick="alert('Circle clicked!')"></div>
+
+  <!-- Polygon -->
+  <svg width="600" height="400">
+    <polygon points="300,200 350,250 320,320 280,320 250,250"
+             fill="rgba(0,0,255,0.2)"
+             stroke="blue" stroke-width="2"
+             onclick="alert('Polygon clicked!')"></polygon>
+  </svg>
+</div>
+
+</body>
+</html>
